@@ -1,0 +1,162 @@
+
+body
+{
+	font-family:open sans, Arial;
+	color: #454545;
+	font-size: 16px;
+	margin: 2em auto;
+	max-width: 800px;
+	padding: 1em;
+	line-height: 1.4;
+	text-align: justify;
+
+}
+
+body
+{
+	display: block;
+}
+
+
+small
+{
+	font-size: 0.4em;
+}
+
+
+
+
+p.fakepre
+{
+	font-family:monospace;
+	font-size: 0.9em;
+}
+
+
+
+
+
+
+
+.sb
+{
+	color:#00e;
+	cursor: not-allowed;
+}
+
+
+.colored
+{
+
+}
+
+
+
+ul li img
+{
+	height: 1em
+}
+
+
+
+.foufoufou
+{
+	color:#444;
+	font-weight: 700;
+}
+
+
+.foufifoufivfoufiv
+{
+	color:#454545;
+	font-weight: 700;
+}
+
+
+.salutation
+{
+	color: #16a085;
+}
+
+
+
+
+.wr
+{
+	color:#c0392b;
+	text-decoration: underline;
+	font-weight:bold;
+}
+
+
+
+
+.citneed
+{
+	vertical-align: top;
+	font-size: 0.7em;
+	padding-left: 0.3em;
+}
+
+
+
+
+.imageflottante
+{
+    float: left;
+    font-size:small;
+
+}
+
+
+.dessous
+{
+	clear: both;
+	font-size:0.7em;
+
+}
+
+
+
+
+a.kopimi img.kopimi
+{
+	height: 2em;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: justify;
+	cursor: pointer;
+
+}
+
+
+
+
+.contrast
+{
+    text-align: right;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    font-size: .8em;
+    text-decoration: underline;
+    user-select: none;
+    color: #000;
+    top: 10px;
+
+}
+
+
+.invmode {
+	text-align: right;
+    color: #fff;
+    background-color: #000;
+    top: 34px;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    font-size: .8em;
+    text-decoration: underline;
+
+}
