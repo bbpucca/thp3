@@ -4,13 +4,16 @@
 	<meta charset="utf-8" />
 	<link rel="stylesheet" href="style.css" />
 
- <-- FF00FF>
 
   <span class="contrast">Add more contrast</span>
   <span class="invmode">Inverted mode</span>
 
 
-<button type="button" onclick="document.body.style.backgroundColor='magenta'"> 'clik'</button>
+<form> 
+  <input type="button" value="Mode Psychédélique">
+</form>
+<p>La machine est arrêtée.</p>
+
 
 
 	<h1>This is the <em>best</em> motherfucking website.</h1>
@@ -204,6 +207,28 @@ Don't worry, it can be read in less than 30 seconds, unless you have some sort o
 		},10000);
 	
 
+var btn = document.querySelector('input');
+var txt = document.querySelector('p');
+
+btn.addEventListener('click', updateBtn);
+
+function updateBtn() {
+  if (btn.value === 'Mode Psychédélique') {
+    btn.value = 'Mode normal';
+    txt.textContent = 'Mode Psychédélique';
+document.body.style.backgroundColor='magenta'
+
+  } else {
+    btn.value = 'Mode Psychédélique';
+    txt.textContent = 'Mode normal';
+    document.body.style.backgroundColor='white'
+  }
+}
+	
+		
+	
+	
+	
 </script>
 
 
