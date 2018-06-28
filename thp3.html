@@ -4,13 +4,19 @@
 	<meta charset="utf-8" />
 	<link rel="stylesheet" href="style.css" />
 
- <-- FF00FF>
+
 
   <span class="contrast">Add more contrast</span>
   <span class="invmode">Inverted mode</span>
 
 
-<button type="button" onclick="document.body.style.backgroundColor='magenta'"> 'clik'</button>
+<form> 
+  <input type="button" value="Démarrer la machine">
+</form>
+<p>La machine est arrêtée.</p>
+
+
+
 
 
 	<h1>This is the <em>best</em> motherfucking website.</h1>
@@ -51,7 +57,7 @@
 	<li>It doesn't load your glorious jQuery or jQueryUI with all their fucking styles and shits. Nor Angular or any other framework. This website is made with plain HTML, CSS3 and JS. Keep it Vanilla!</li>
 	<li>Doesn't include any tracking service <small>this website does, but hey, who cares</small></li>
 	<li>Images aren't forbidden, but when SVG is available JUST USE IT.</li>
-	<li>Use some fucking <span class="colored" id "rbw" style="color: rgb();">colors</span>.</li>
+	<li>Use some fucking <span class="colored" id "rbw" style="color: 	#8A2BE2;">colors</span>.</li>
 	<li>Links don't really need to keep that <span class="sb">shitty blue</span> the browser is giving them: nor that violetish color when they are marked as visited. Just give them a <a href="http://www.colorhexa.com/0077aa">nice color</a></li>
 
 </ul>
@@ -106,11 +112,14 @@
 <div>
 
 <p><img src="cat.jpg" height="40%" width="40%" class="imageflottante" alt="image flottante"/> </p>
+
+<div class="para">
 <p>We're not looking at a novel by Stephanie Meyer, this is a <span class="salutation">motherfuckingwebsite</span> so include some pictures to give a context.</p>
 
 	<p>The website shouldn't be overfilled with pictures, but it should make the user happy while reading your nonsense words.</p>
 
 	<p>You see that fancy cat? He's happy, you should be too.</p>
+</div>
 
 
 	<p class="dessous">A cat, just to keep the context of the website.</p>
@@ -127,9 +136,9 @@
 	<blockquote>
 	
 
-		<p><span>Good design is as little design as possible.</span></p>
-
-		<p><small>Some German motherfucker on motherfuckingwebsite.com</small></p>
+		<p><span class="point">Good design is as little design as possible.</span></p>
+  
+		<p><small class="secondsmall">- Some German motherfucker on motherfuckingwebsite.com</small></p>
 
 
 	</blockquote>
@@ -202,6 +211,26 @@ Don't worry, it can be read in less than 30 seconds, unless you have some sort o
 		function(){
 			alert('Hey le site xxxvidsxxx est trop bien. Viens dessus stp please')
 		},10000);
+
+
+	var btn = document.querySelector('input');
+var txt = document.querySelector('p');
+
+btn.addEventListener('click', updateBtn);
+
+function updateBtn() {
+  if (btn.value === 'Démarrer la machine') {
+    btn.value = 'Arrêter la machine';
+    txt.textContent = 'La machine est démarrée !';
+    
+   document.body.style.backgroundColor='magenta'
+   
+  } else {
+    btn.value = 'Démarrer la machine';
+    txt.textContent = 'La machine est arrêtée.';
+document.body.style.backgroundColor=null
+  }
+}
 	
 
 </script>
